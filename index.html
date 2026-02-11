@@ -198,7 +198,13 @@
       <div class="visual-grid fade-up">
 
         <div class="visual-card">
-          <div class="visual-placeholder">Legacy Homepage Screenshot</div>
+          <div class="visual-placeholder"><img src="OID Home Page.png" class="thumbnail">Legacy Homepage Screenshot
+          </div>
+          <div id="myModal" class="modal">
+            <span class="close">&times;</span>
+            <img class="modal-content" id="img01">
+            <div id="caption"></div>
+          </div>
           <h4>Original Homepage</h4>
         </div>
 
@@ -309,6 +315,35 @@
     document.querySelectorAll('.fade-up').forEach(el => {
       observer.observe(el);
     });
+  </script>
+  <script>
+    var modal = document.getElementById("myModal");
+    var modalImg = document.getElementById("img01");
+    var captionText = document.getElementById("caption");
+    var placeholders = document.getElementsByClassName("visual-placeholder");
+
+    for (var i = 0; i < placeholders.length; i++) {
+      placeholders[i].onclick = function () {
+        modal.style.display = "block";
+        var imgElement = this.querySelector('.thumbnail');
+        modalImg.src = imgElement.src;
+        captionText.innerHTML = imgElement.alt;
+      }
+    }
+
+    var span = document.getElementsByClassName("close")[0];
+
+    // When the user clicks on <span> (x), close the modal
+    span.onclick = function () {
+      modal.style.display = "none";
+    }
+
+    // Optional: Close the modal if the user clicks outside the image area but inside the modal
+    modal.onclick = function (event) {
+      if (event.target == modal) {
+        modal.style.display = "none";
+      }
+    }
   </script>
 
 </body>
