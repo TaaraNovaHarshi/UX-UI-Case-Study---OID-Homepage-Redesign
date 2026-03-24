@@ -2,10 +2,10 @@
        ROOT VARIABLES
     ========================= */
 :root {
-  --primary: #1f3cff; /* Royal Blue */
+  --primary: #092aff; /* Royal Blue */
   --secondary: #00030a;
-  --bg: black;
-  --accent: #637dcf;
+  --bg: rgb(15, 15, 27);
+  --accent: #5346c7;
   --light: #fcfdfd;
   --radius-lg: 20px;
   --radius-md: 12px;
@@ -78,7 +78,7 @@ section {
   min-height: 90vh;
   display: flex;
   align-items: center;
-  background: linear-gradient(135deg, var(--accent), #fff);
+  background: linear-gradient(35deg, #fff, #fff, var(--accent));
   overflow: hidden;
 }
 
@@ -93,6 +93,10 @@ section {
   font-size: clamp(2.5rem, 5vw, 3.5rem);
   line-height: 1.2;
   margin-bottom: 1.5rem;
+  color: var(--primary);
+  /*text-shadow:
+    0 0 2px var(--light),
+    2px 2px 2px #000;*/
 }
 
 .hero p {
@@ -149,6 +153,14 @@ section {
   color: var(--secondary);
   font-weight: 500;
   text-align: center;
+  overflow: hidden;
+}
+
+.hero-thumbnail {
+  max-width: 100%;
+  height: auto;
+  display: block;
+  object-fit: cover;
 }
 
 /* =========================
@@ -205,7 +217,7 @@ section {
 }
 
 /* =========================
-       VISUAL COMPARISON
+       VISUAL GALLERY
     ========================= */
 .visual-grid {
   display: grid;
@@ -225,7 +237,7 @@ section {
   transform: translateY(-6px);
 }
 
-.visual-placeholder {
+.visual {
   aspect-ratio: 16 / 10;
   background: linear-gradient(135deg, #f3f4f6, #e5e7eb);
   cursor: pointer;
@@ -374,7 +386,7 @@ footer p {
 }
 
 /* =========================
-       RESPONSIVE
+       RESPONSIVE/ACCESSIBILITY
     ========================= */
 @media (max-width: 900px) {
   .hero-grid {
@@ -385,4 +397,18 @@ footer p {
     min-height: auto;
     padding: 4rem 0;
   }
+}
+@media (prefers-reduced-motion: reduce) {
+  * {
+    animation: none !important;
+    transition: none !important;
+  }
+}
+a:focus,
+button:focus,
+input:focus,
+select:focus,
+[tabindex]:focus {
+  outline: 2px solid orange;
+  outline-offset: 2px;
 }

@@ -33,8 +33,8 @@
       </div>
 
       <div class="hero-preview fade-up">
-        Thumbnail / GIF Placeholder<br>
-        (Legacy → Redesign)
+        <img src="OID Case Study Images & Mockups/OID Hompage Redesign Thumbnail.png"
+          alt="Legacy Homepage Redesign Thumbnail" class="thumbnail">
       </div>
 
     </div>
@@ -46,16 +46,18 @@
 
       <div class="section-header fade-up">
         <h2>Project Overview</h2>
-        <p>Redesigning the primary entry point for drivers, applicants, and customers.</p>
+        <p>Redesigning Outer Image Delivery’s primary entry point for drivers, applicants, and customers.</p>
       </div>
 
       <div class="content-block fade-up">
         <p>
           Outer Image Delivery (OID) is a logistics and delivery company supporting over 300 drivers and administrative
           users. The company’s public-facing website serves as the primary entry point for three key user groups:
-          delivery drivers, onboarding applicants, and customers seeking delivery services and support. As the Front-End
-          Developer and UX/UI Design Engineer, I led the end-to-end redesign of OID’s homepage to improve usability,
+          delivery drivers, onboarding applicants, and customers seeking delivery services and support. <br><br> As the
+          Front-End
+          Engineer and UX/UI Design Engineer, I led the end-to-end redesign of OID’s homepage to improve usability,
           accessibility, navigation clarity, and conversion pathways while aligning with evolving platform requirements.
+          <br><br>
           This project focused on transforming a fragmented, low-conversion homepage into a streamlined, user-centered
           entry point for drivers and customers. The redesign process involved comprehensive user research, competitive
           analysis, and iterative design development, culminating in a scalable, accessible interface that supports
@@ -74,11 +76,16 @@
         </ul>
       </div>
       <div class="content-block fade-up">
-        <h3>User Groups - Primary Users</h3>
+        <h3>User Groups</h3>
+        <h4>Primary Users</h4>
         <ul>
+          <li>Prospective business partners</li>
+          <li>Customers using delivery services</li>
           <li>Active delivery drivers</li>
           <li>Prospective driver applicants</li>
-          <li>Customers using delivery services</li>
+        </ul>
+        <h4>Secondary Users</h4>
+        <ul>
           <li>Internal administrative staff</li>
           <li>Partner organizations (future white-label users)</li>
         </ul>
@@ -99,8 +106,8 @@
         <div class="meta-card">
           <h4>Roles</h4>
           <ul>
-            <li>Lead UX/UI Designer</li>
-            <li>Lead Front-End Developer</li>
+            <li>Lead UX/UI Design Engineer</li>
+            <li>Lead Front-End Engineer</li>
             <li>Product Strategist</li>
           </ul>
         </div>
@@ -124,8 +131,10 @@
             <li>Figma</li>
             <li>HTML / CSS / JS</li>
             <li>Chrome DevTools</li>
-            <li>GitHub/Bash</li>
+            <li>GitHub/Bash/Git</li>
             <li>Visual Studio Code</li>
+            <li>GitHub Copilot</li>
+            <li>Google Analytics (future)</li>
           </ul>
         </div>
 
@@ -139,18 +148,21 @@
     <div class="container">
 
       <div class="section-header fade-up">
-        <h2>Research & Analysis</h2>
+        <h2>Research</h2>
       </div>
 
       <div class="content-block fade-up">
         <h3>Problem Statement</h3>
-        <p>The legacy homepage was cluttered, confusing, and lacked clear navigation paths for different user groups. It
-          failed to effectively communicate the platform's value proposition and hindered user onboarding and
-          engagement.</p>
+        <p>The legacy homepage presented multiple usability and structural issues that hindered user engagement and
+          conversion. It lacked clear navigation paths for different user groups and failed to effectively communicate
+          the platform's value proposition and hindered user onboarding and engagement.</p>
         <h3>Key Challenges</h3>
         <ul>
           <li>Unclear CTAs and redundant navigation</li>
           <li>Poor visual hierarchy and crowded layouts</li>
+          <li>Lack of user segmentation</li>
+          <li>Weak value proposition</li>
+          <li>Inconsistent branding</li>
           <li>Low accessibility compliance</li>
           <li>Navigation confusion</li>
           <li>Repetitive content pathways</li>
@@ -171,18 +183,230 @@
           <li>Information architecture</li>
           <li>Conversion optimization</li>
         </ul>
-        <p>Screenshots of the existing site were annotated in Figma to highlight pain points and usability breakdowns.
+        <p>Screenshots of the existing site were annotated to highlight pain points and usability breakdowns.
+          Key findings discovered are listed below, categorized by UX/UI principles.
         </p>
-        <h3>Design Strategy</h3>
+        <h3>Key UX/UI Findings</h3>
+        <h4>Navigation and Information Architecture</h4>
         <ul>
-          <li>Clarity over complexity</li>
-          <li>User segmentation</li>
-          <li>Accessibility by default</li>
-          <li>Scalable systems</li>
+          <li>Multiple CTAs redirected to the same destination</li>
+          <li>Redundant "Learn More" and "More" buttons</li>
+          <li>No clear separation between customer/client and driver user workflows</li>
+          <li>Unclear user pathways and next steps</li>
+          <li>Lack of search engine optimization</li>
         </ul>
-
+        <h4>Visual Design and Branding Issues</h4>
+        <ul>
+          <li>Low contrast between logo and navigation</li>
+          <li>Inconsistent imagery and styling</li>
+          <li>Inconsistent color scheme across webpage and mobile app</li>
+          <li>Overuse of AI-generated or low-quality visuals</li>
+          <li>Footer misalignment with brand identity</li>
+        </ul>
+        <h4>Content and Hierarchy Issues</h4>
+        <ul>
+          <li>Weak value proposition in hero section and homepage</li>
+          <li>Missing or incomplete content sections</li>
+          <li>Inconsistent tone, voice, and verbiage</li>
+          <li>Repetitive service descriptions</li>
+          <li>Poor scanning hierarchy</li>
+        </ul>
+        <h4>Accessibility and Usability Issues</h4>
+        <ul>
+          <li>Low color contrast and small font sizes</li>
+          <li>Insufficient contrast ratios</li>
+          <li>Limited focus indicators in header section</li>
+          <li>Missing alternative text for images</li>
+          <li>Inconsistent responsive behavior on mobile devices</li>
+          <li>Lack of semantic header organization</li>
+          <li>Inconsistent link labeling</li>
+          <li>Carousel readability issues</li>
+          <li>Non-compliant with WCAG 2.1 Level A and Level AA standards</li>
+          <li>Non-compliant with ADA standards</li>
+        </ul>
+        <h4>Conversion Friction and User Engagement Issues</h4>
+        <ul>
+          <li>Low visibility of driver application pathways</li>
+          <li>Unclear value proposition for customers and drivers</li>
+          <li>Lack of trust-building elements (e.g., testimonials, performance indicators)</li>
+          <li>Lack of company's about us section and mission statement</li>
+          <li>Poor mobile engagement and conversion rates</li>
+          <li>Support contact information not easily accessible</li>
+          <li>Lack of frequently asked questions (FAQ) section</li>
+          <li>Missing company's privacy policy and terms of service</li>
+        </ul>
+        <h3>User Needs and Goals</h3>
+        <h4>Customer/Client Needs</h4>
+        <ul>
+          <li>Clear understanding of services offered</li>
+          <li>Easy navigation to relevant information</li>
+          <li>Trust and credibility indicators</li>
+          <li>Access to package tracking and visibility</li>
+          <li>Accessible support options</li>
+        </ul>
+        <h4>Business Goals</h4>
+        <ul>
+          <li>Improve customer engagement and service adoption</li>
+          <li>Strengthen brand credibility and visual identity</li>
+          <li>Increase driver applications and onboarding conversion rates</li>
+          <li>Enhance accessibility and compliance</li>
+          <li>Establish scalable design patterns for future growth</li>
+        </ul>
+        <h4>Driver Needs</h4>
+        <ul>
+          <li>Clear pathway to apply and onboard</li>
+          <li>Understanding of driver benefits and support</li>
+          <li>Accessible resources and contact support options</li>
+          <li>Trust-building elements to encourage application</li>
+          <li>Easy access to driver portal and mobile application</li>
+        </ul>
+        <h3>Design Strategy</h3>
+        <p>Based on the research findings, the design strategy for the homepage redesign focused on the following
+          principles:</p>
+        <ul>
+          <li>Clarity Over Complexity</li>
+          <li>Conversion-Focused Layouts</li>
+          <li>User Segmentation</li>
+          <li>Accessibility Compliance</li>
+          <li>Brand Consistency</li>
+          <li>Scalable System Design</li>
+        </ul>
+        <h3>Information Architecture Redesign</h3>
+        <p>I reorganized the homepage around the three primary user paths the client identified:</p>
+        <ul>
+          <li>Customer/Client Services</li>
+          <li>Driver Application and Onboarding</li>
+          <li>Contact Support</li>
+        </ul>
+        <p>This structure ensured immediate routing for all major user groups.</p>
+        <p>Redundant navigation elements were removed, and content hierarchy was simplified.</p>
+        <h3>Wireframing</h3>
+        <p>Low-fidelity wireframes were created manually to establish:</p>
+        <ul>
+          <li>Page structure</li>
+          <li>Content prioritization</li>
+          <li>CTA placement (including dual primary CTAs)</li>
+          <li>Navigation flow</li>
+          <li>Mobile responsiveness</li>
+        </ul>
+        <p>Wireframes focused on layout and interaction before visual styling.</p>
       </div>
 
+    </div>
+  </section>
+
+  <!-- ================= Analysis ================= -->
+  <section>
+    <div class="container">
+
+      <div class="section-header fade-up">
+        <h2>Analysis</h2>
+      </div>
+
+      <div class="content-block fade-up">
+        <h3>Hero Section</h3>
+        <p>One of the key usability issues identified during the initial website audit was the lack of a clear value
+          proposition in the homepage hero section. The existing headline, “making delivery easier for everyone,” was
+          overly broad and did not effectively communicate the company’s core services or target audience.
+
+          Because the homepage serves as the primary entry point for prospective customers, drivers, and partners, the
+          hero messaging needed to quickly establish credibility while clearly explaining what the company offers.
+
+          To address this, I redesigned the hero section to focus on a stronger, customer-oriented value proposition
+          centered around reliability, professionalism, and business logistics. The revised messaging emphasizes
+          dependable delivery services while clearly communicating the company’s role as a logistics partner for
+          businesses and customers.
+
+          In addition to updating the headline, a supporting subheadline was introduced to provide immediate context
+          about the company’s delivery network and services. This two-layer messaging structure improves clarity,
+          strengthens brand positioning, and helps new visitors quickly understand the company’s offerings.
+
+          The redesigned hero also supports clearer user pathways through dual primary calls-to-action, allowing potential
+          customers to learn more about services while enabling drivers to access onboarding and application features more
+          efficiently.
+
+          This update improves both the clarity and effectiveness of the homepage by aligning the messaging with the
+          needs of prospective customers and the company’s long-term growth goals.</p>
+      </div>
+      <div class="content-block fade-up">
+        <h3>Navigation Redesign</h3>
+        <p>The original navigation system contained redundant links and multiple calls-to-action leading to the same destinations, which created confusion and reduced usability.
+
+          I simplified the navigation by restructuring menu items and removing unnecessary duplication. Clear, distinct pathways were established for key actions such as exploring services, applying as a driver, and tracking packages.
+          
+          Additionally, dual primary CTAs were strategically placed within the navigation bar to improve visibility and accessibility. This redesign enhances clarity, reduces user friction, and supports more efficient navigation across the platform.</p>
+      </div>
+      <div class="content-block fade-up">
+        <h3>User Segmentation</h3>
+        <p>One of the most critical usability issues was the lack of clear user segmentation. Drivers, prospective
+          applicants, and customers were all presented with the same content and navigation pathways, leading to
+          confusion and inefficient user journeys.
+
+          To resolve this, I restructured the homepage to clearly separate primary user paths, specifically for drivers
+          and customers. Dedicated entry points and CTAs were introduced to guide users toward relevant actions such as
+          applying to drive or accessing delivery services.
+
+          This approach reduced cognitive load, improved navigation clarity, and ensured that each user group could
+          quickly identify the information most relevant to their needs.</p>
+      </div>
+      <div class="content-block fade-up">
+        <h3>Services Overview</h3>
+        <p>The original homepage included duplicated and overly dense service content that repeated information found on
+          other pages. This redundancy contributed to poor content hierarchy and reduced overall usability.
+
+          I redesigned the services section using a concise, card-based layout that highlights key offerings without
+          overwhelming the user. Each service is presented with a clear label and supporting description, allowing users
+          to quickly scan and understand available solutions.
+
+          This streamlined approach improves readability, eliminates duplication, and encourages users to explore
+          service-specific pages when needed.</p>
+      </div>
+      <div class="content-block fade-up">
+        <h3>Driver Recruitment Section</h3>
+        <p>Driver onboarding is a core business function, yet the original homepage did not effectively prioritize or
+          highlight this user group. As a result, potential drivers lacked a clear and compelling pathway to apply.
+
+          To address this, I introduced a dedicated driver-focused section that clearly communicates the benefits of
+          joining the platform, such as flexibility, support, and earning opportunities. This section includes a
+          prominent call-to-action to initiate the application process.
+
+          By elevating driver recruitment within the homepage, the redesign aligns more closely with business goals and
+          improves conversion potential for onboarding new drivers.</p>
+      </div>
+      <div class="content-block fade-up">
+        <h3>Testimonials & Trust Signals</h3>
+        <p>The original homepage lacked trust-building elements, such as testimonials or performance indicators, which
+          are especially important in logistics and delivery services where reliability is critical.
+
+          To strengthen credibility, I incorporated a testimonials and trust signals section highlighting user
+          experiences and key performance metrics. This provides social proof and reassures potential customers of the
+          company’s reliability and professionalism.
+
+          Introducing these elements enhances user confidence and supports more informed decision-making.</p>
+      </div>
+      <div class="content-block fade-up">
+        <h3>Support & Contact Access</h3>
+        <p>Access to customer support was limited and not clearly visible in the original design, with key contact
+          options either missing or difficult to locate. This created unnecessary friction for users seeking assistance.
+
+          I redesigned the support section to centralize all contact options, including phone, email, and a dedicated
+          contact page. Clear calls-to-action were added to ensure users can quickly reach support when needed. And a frewquently asked questions (FAQ) section was added to provide immediate answers to common inquiries.
+
+          This improvement enhances usability, reduces frustration, and ensures users can easily access help throughout
+          their journey.</p>
+      </div>
+      <div class="content-block fade-up">
+        <h3>Footer Redesign</h3>
+        <p>The original footer lacked structure and visual consistency, making it difficult for users to locate
+          important links and information. Additionally, it did not align well with the overall branding of the site.
+
+          I redesigned the footer using a structured, multi-column layout that organizes navigation links, driver
+          resources, and contact information into clearly defined sections. The visual design was also updated to align
+          with the platform’s branding system.
+
+          This results in improved usability, better information discoverability, and a more cohesive overall user
+          experience.</p>
+      </div>
     </div>
   </section>
 
@@ -194,32 +418,88 @@
         <h2>Design Evolution</h2>
         <p>From legacy experience to future-ready platform.</p>
       </div>
-
+      <div class="content-block fade-up">
+        <h3>Visual System</h3>
+        <p>The redesign maintained OID's brand colors while implementing a more cohesive visual hierarchy, higher
+          contrast, and improved typography.</p>
+        <h4>Color Palette</h4>
+        <ul>
+          <li>Primary: Royal Blue (#1A73E8)</li>
+          <li>Secondary: Indigo (#FABB05)</li>
+          <li>Accent: Subtle highlight tone (#34A853)</li>
+          <li>Background: White (#FFFFFF)</li>
+        </ul>
+        <h4>Typography</h4>
+        <p>The updated typography system features the Roboto font with improved hierarchal scaling and spacing for
+          better legibility across different devices.</p>
+        <h4>Components</h4>
+        <ul>
+          <li>Buttons: Primary (filled) and Secondary (outlined) styles with consistent padding and hover states</li>
+          <li>Cards: Clean, modular design for testimonials</li>
+          <li>Navigation/Header and Footer Elements: Simplified header with clear user pathways and a structured footer
+            for improved discoverability</li>
+          <li>Input fields/Forms: Streamlined contact forms with clear labels, input fields, and error handling</li>
+        </ul>
+        <p>All components were documented for future reuse</p>
+      </div>
       <div class="visual-grid fade-up">
 
         <div class="visual-card">
-          <div class="visual-placeholder"><img src="OID Home Page.png" class="thumbnail">Legacy Homepage Screenshot
+          <div class="visual"><img src="OID Home Page.png" class="thumbnail" fullscreen>Legacy Homepage
+            Screenshot
           </div>
           <div id="myModal" class="modal">
             <span class="close">&times;</span>
             <img class="modal-content" id="img01">
             <div id="caption"></div>
           </div>
-          <h4>Original Homepage</h4>
+          <h4>Legacy Homepage</h4>
         </div>
-
         <div class="visual-card">
-          <div class="visual-placeholder">Annotated UX Audit</div>
+          <div class="visual"><img src="OID Home Page.png" class="thumbnail" fullscreen>Legacy Homepage
+            Screenshot
+          </div>
+          <div id="myModal" class="modal">
+            <span class="close">&times;</span>
+            <img class="modal-content" id="img01">
+            <div id="caption"></div>
+          </div>
+          <h4>Redesigned Homepage</h4>
+        </div>
+        <div class="visual-card">
+          <div class="visual"><img src="OID Home Page.png" class="thumbnail" fullscreen>Legacy Homepage
+            Screenshot
+          </div>
+          <div id="myModal" class="modal">
+            <span class="close">&times;</span>
+            <img class="modal-content" id="img01">
+            <div id="caption"></div>
+          </div>
+          <h4>Legacy Homepage</h4>
+        </div>
+        <div class="visual-card">
+          <div class="visual"><img src="OID Home Page.png" class="thumbnail" fullscreen>Legacy Homepage
+            Screenshot
+          </div>
+          <div id="myModal" class="modal">
+            <span class="close">&times;</span>
+            <img class="modal-content" id="img01">
+            <div id="caption"></div>
+          </div>
+          <h4>Redesigned Homepage</h4>
+        </div>
+        <div class="visual-card">
+          <div class="visual">Annotated UX Audit</div>
           <h4>Annotated Analysis</h4>
         </div>
 
         <div class="visual-card">
-          <div class="visual-placeholder">High-Fidelity Mockup</div>
+          <div class="visual">High-Fidelity Mockup</div>
           <h4>Design Mockups</h4>
         </div>
 
         <div class="visual-card">
-          <div class="visual-placeholder">Final UI Preview</div>
+          <div class="visual">Final UI Preview</div>
           <h4>Final Interface</h4>
         </div>
 
@@ -248,7 +528,15 @@
     <div class="container">
 
       <div class="section-header fade-up">
-        <h2>Results & Performance (Future)</h2>
+        <h2>Results & Performance (Projected Impact)</h2>
+        <p>While full analytics were pending implementation, the redesign was expected to:</p><br>
+        <ul>
+          <li>Strengthen brand credibility</li>
+          <li>Increase customer and client conversion rates</li>
+          <li>Improve driver applications and onboarding rates</li>
+          <li>Support platform growth and scalability</li>
+        </ul>
+        <br>
         <p>Reserved space for analytics, A/B testing, and user metrics.</p>
       </div>
 
@@ -283,9 +571,18 @@
       </div>
 
       <div class="content-block fade-up">
+        <p>This project strengthened my ability to:</p>
+        <ul>
+          <li>Translate complex operational systems into usable interfaces</li>
+          <li>Balance business goals with user needs</li>
+          <li>Design scalable multi-user platforms</li>
+          <li>Apply accessibility standards in real-world environments</li>
+          <li>Collaborate effectively with technical stakeholders and backend engineers</li>
+        </ul>
         <p>
           This project reinforced the importance of research-driven design,
-          accessibility-first thinking, and scalable system architecture.
+          accessibility-first thinking, scalable system architecture, and iterative validation in building sustainable
+          digital products.
         </p>
       </div>
 
@@ -320,10 +617,10 @@
     var modal = document.getElementById("myModal");
     var modalImg = document.getElementById("img01");
     var captionText = document.getElementById("caption");
-    var placeholders = document.getElementsByClassName("visual-placeholder");
+    var visual = document.getElementsByClassName("visual");
 
-    for (var i = 0; i < placeholders.length; i++) {
-      placeholders[i].onclick = function () {
+    for (var i = 0; i < visual.length; i++) {
+      visual[i].onclick = function () {
         modal.style.display = "block";
         var imgElement = this.querySelector('.thumbnail');
         modalImg.src = imgElement.src;
