@@ -217,6 +217,54 @@ section {
 }
 
 /* =========================
+       USER JOURNEY GRID
+    ========================= */
+.journey-wrapper {
+  overflow-x: auto;
+  margin-top: 3rem;
+  margin-bottom: 3rem;
+  scrollbar-gutter: stable;
+  scrollbar-width: thick;
+  scrollbar-color: var(--primary) transparent;
+}
+
+.journey-grid {
+  display: grid;
+  grid-template-columns:
+    220px
+    260px
+    260px
+    260px;
+
+  min-width: 1000px;
+  border-radius: 20px;
+  overflow: hidden;
+  border: 1px solid grey;
+}
+
+.journey-grid > div {
+  padding: 1.5rem;
+  background: var(--light);
+  border-right: 1px solid grey;
+  border-bottom: 1px solid grey;
+  transition: 0.3s;
+}
+
+.journey-grid > div:hover {
+  background: var(--accent);
+  color: var(--light);
+}
+
+.journey-header {
+  font-weight: 700;
+  background: var(--light);
+}
+
+.journey-stage {
+  font-weight: 700;
+}
+
+/* =========================
    VISUAL GALLERY COMPARISON LAYOUT
 ========================= */
 .comparison-section {
@@ -405,6 +453,61 @@ section {
   font-size: 40px;
   color: white;
   cursor: pointer;
+}
+
+/* System Architecture */
+.architecture-diagram {
+  max-width: 1000px;
+  margin: 3rem auto;
+}
+
+.arch-layer {
+  display: flex;
+  justify-content: center;
+  gap: 2rem;
+  flex-wrap: wrap;
+}
+
+.arch-layer.split {
+  justify-content: center;
+}
+
+.arch-box {
+  min-width: 220px;
+  padding: 1.5rem;
+  border-radius: 18px;
+  background: var(--light);
+  border: 1px solid rgba(255, 255, 255, 0.08);
+  backdrop-filter: blur(15px);
+  transition: 0.35s ease;
+}
+
+.arch-box:hover {
+  transform: translateY(-6px);
+}
+
+.arch-box span {
+  font-size: 2rem;
+  display: block;
+  margin-bottom: 0.75rem;
+}
+
+.arch-box.wide {
+  min-width: 420px;
+}
+
+.arch-arrow {
+  text-align: center;
+  font-size: 2rem;
+  margin: 1rem 0;
+  animation: archFlow 2.5s infinite;
+}
+
+@keyframes archFlow {
+  50% {
+    transform: translateY(6px);
+    opacity: 0.5;
+  }
 }
 
 /* Final UI */

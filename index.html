@@ -295,6 +295,81 @@
           <li>Brand Consistency</li>
           <li>Scalable System Design</li>
         </ul>
+        <div class="section-header fade-up">
+          <h3>User Journey Map</h3>
+          <p>
+            The redesign focused on reducing friction throughout the driver onboarding
+            and customer support journeys while creating clearer pathways between key
+            actions and platform goals.
+          </p>
+        </div>
+        <div class="journey-wrapper fade-up">
+          <div class="journey-grid">
+            <div class="journey-header">Journey Stage</div>
+            <div class="journey-header">User Goals</div>
+            <div class="journey-header">Pain Points</div>
+            <div class="journey-header">Opportunities</div>
+            <div class="journey-stage">
+              Discover
+            </div>
+            <div>
+              Learn about services<br>
+              Explore opportunities
+            </div>
+            <div>
+              Confusing navigation<br>
+              Weak value proposition
+            </div>
+            <div>
+              Improve homepage hierarchy<br>
+              Clarify user pathways
+            </div>
+            <div class="journey-stage">
+              Evaluate
+            </div>
+            <div>
+              Compare services<br>
+              Understand requirements
+            </div>
+            <div>
+              Repetitive content<br>
+              Information overload
+            </div>
+            <div>
+              Consolidated content<br>
+              Simplified structure
+            </div>
+            <div class="journey-stage">
+              Apply / Convert
+            </div>
+            <div>
+              Apply as driver<br>
+              Contact support
+            </div>
+            <div>
+              Hidden CTAs<br>
+              Limited discoverability
+            </div>
+            <div>
+              Dedicated conversion pathways<br>
+              Persistent action buttons
+            </div>
+            <div class="journey-stage">
+              Engage
+            </div>
+            <div>
+              Access resources<br>
+              Receive assistance
+            </div>
+            <div>
+              Support difficult to locate
+            </div>
+            <div>
+              Centralized support experience
+            </div>
+          </div>
+
+        </div>
         <h3>Information Architecture Redesign</h3>
         <p>I reorganized the homepage around the three primary user paths the client identified:</p>
         <ul>
@@ -524,6 +599,76 @@
 
       </div>
 
+      <!-- ===== SYSTEM ARCHITECTURE DIAGRAM ===== -->
+      <div class="section-header fade-up">
+        <h3>System Architecture</h3>
+        <p>
+          The redesigned platform was planned around a scalable, modular architecture
+          supporting multiple user groups, secure authentication workflows, and future
+          platform expansion. <br><br> The frontend is built with HTML, CSS, and JavaScript, utilizing a component-based
+          architecture for
+          scalability. The API layer
+          handles data fetching and business logic, while the authentication system ensures secure access for drivers
+          and customers. The database stores user information, service data, and application details. An integrated
+          CMS/Admin Panel allows for easy content updates and management by administrative staff.
+        </p>
+      </div>
+      <div class="architecture-diagram fade-up">
+        <div class="arch-layer user-layer">
+          <div class="arch-box">
+            <span>🚚</span>
+            <h4>Drivers</h4>
+          </div>
+          <div class="arch-box">
+            <span>📦</span>
+            <h4>Customers</h4>
+          </div>
+          <div class="arch-box">
+            <span>⚙️</span>
+            <h4>Administrators</h4>
+          </div>
+        </div>
+        <div class="arch-arrow">↓</div>
+        <div class="arch-layer">
+          <div class="arch-box wide">
+            <h4>Frontend Layer</h4>
+            <p>HTML • CSS • JavaScript • Responsive UI Components</p>
+          </div>
+        </div>
+        <div class="arch-arrow">↓</div>
+        <div class="arch-layer">
+          <div class="arch-box wide">
+            <h4>API & Business Logic Layer</h4>
+            <p>Data Processing • Validation • Service Integrations</p>
+          </div>
+        </div>
+        <div class="arch-arrow">↓</div>
+        <div class="arch-layer split">
+          <div class="arch-box">
+            <h4>Authentication</h4>
+            <p>User Access & Permissions</p>
+          </div>
+          <div class="arch-box">
+            <h4>Database</h4>
+            <p>User Data • Applications • Services</p>
+          </div>
+        </div>
+        <div class="arch-arrow">↓</div>
+        <div class="arch-layer">
+          <div class="arch-box wide">
+            <h4>CMS / Admin Panel</h4>
+            <p>Content Management • Operational Updates • Administration</p>
+          </div>
+        </div>
+      </div>
+      <div class="content-block fade-up">
+        <p>
+          Architecture details continue to evolve as platform functionality expands.
+          Additional backend documentation and implementation diagrams will be added
+          following deployment and stakeholder approval.
+        </p>
+      </div>
+
       <!-- ===== FINAL UI (SEPARATED + CENTERED) ===== -->
       <div class="content-block fade-up">
         <h3>Final Interface</h3>
@@ -548,6 +693,7 @@
         </div>
       </div>
     </div>
+
   </section>
 
   <!-- ================= COMING SOON ================= -->
